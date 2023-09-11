@@ -2,26 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.gradient_btn {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    103.91deg,
+    #9b51e0 21.01%,
+    rgba(48, 129, 237, 0.8) 100%
+  );
+}
+
+.pink_gradient {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+
+  background: #fb37ff;
+  filter: blur(200px);
+}
+
+.blue_gradient {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+
+  background: #18b2de;
+  filter: blur(200px);
+}
+
+.gradient-border {
+  background: linear-gradient(
+    168.82deg,
+    #fb37ff 1.7%,
+    rgba(155, 111, 238, 0) 27.12%,
+    rgba(123, 127, 234, 0) 61.28%,
+    #1bb2de 99.52%
+  );
 }
