@@ -40,7 +40,7 @@ Before you start, make sure you have the following prerequisites:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/kunjonswap.git
+   git clone https://github.com/KunJon-analytics/kunjonswap.git
    cd kunjonswap
    ```
 
